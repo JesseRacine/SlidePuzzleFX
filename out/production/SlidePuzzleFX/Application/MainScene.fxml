@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="334.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.SceneController">
+   <children>
+      <Pane fx:id="PuzzleCanvas" layoutX="7.0" layoutY="17.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: GRAY;" />
+      <Button fx:id="scrambleButton" layoutX="324.0" layoutY="17.0" mnemonicParsing="false" onAction="#scramblePressed" text="Scramble" />
+      <Button fx:id="solveButton1" layoutX="324.0" layoutY="59.0" mnemonicParsing="false" onAction="#solvePressed" text="Solve" />
+      <Button fx:id="stopButton1" layoutX="324.0" layoutY="105.0" mnemonicParsing="false" onAction="#stopPressed" text="Stop" />
+      <Label fx:id="statusLabel" layoutX="324.0" layoutY="146.0" style="-fx-font-weight: BOLD;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Slider fx:id="solveSlider" layoutX="324.0" layoutY="213.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" prefHeight="38.0" prefWidth="195.0" showTickMarks="true" snapToTicks="true" />
+      <Label layoutX="324.0" layoutY="192.0" text="Solve Depth" />
+   </children>
+</AnchorPane>
